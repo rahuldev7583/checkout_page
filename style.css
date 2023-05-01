@@ -1,89 +1,96 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-h2{
+h2 {
   margin: 1rem 0 0 10px;
 }
-img{
+img {
   width: 30%;
   border-radius: 10px;
 }
-.main{
-  background-color: #EFEFEF;
+.main {
+  background-color: #efefef;
   width: 95%;
   border-radius: 10px;
   margin: 1rem 0 0 10px;
 }
-.item1, .item2, .price, .quantity-div{
+.item1,
+.item2,
+.price,
+.quantity-div {
   display: flex;
 }
-.item1, .item2{
-  margin: 1rem 0 0 1rem; 
+.item1,
+.item2 {
+  margin: 1rem 0 0 1rem;
   padding: 1rem 1rem;
 }
-.product-detail{
+.product-detail {
   margin-left: 2rem;
 }
-.product-name{
+.product-name {
   font-weight: 600;
 }
-.pricing{
+.pricing {
   color: #f2994a;
   font-weight: bold;
 }
-.price{
+.price {
   margin-top: 10px;
 }
-.cut-pricing{
+.cut-pricing {
   text-decoration: line-through;
   margin-left: 10px;
 }
-.quantity-div{
+.quantity-div {
   margin: 20px 0 0 0;
   border: 1px solid black;
   border-radius: 5px;
   padding: 10px 0 10px 0;
 }
-.minus, .plus{
+.minus,
+.plus {
   font-size: 1.2rem;
   background-color: lightgrey;
   width: 30px;
   height: 20px;
   border-radius: 5px;
   border: none;
-  margin: 0 10px 0 10px;
+  margin: 0 10px 0 8px;
 }
 .billing {
   font-weight: 600;
   margin: 2rem 0 0 2rem;
 }
-hr{
+hr {
   width: 90%;
 }
-.shipping, .total-bill{
+.shipping,
+.total-bill {
   display: flex;
   margin-top: 1rem;
   padding-bottom: 1rem;
 }
-.cost{
+.cost {
   position: absolute;
   right: 2.5rem;
 }
 .contact {
   margin: 1rem 0 0 10px;
 }
-.conact h3{
+.conact h3 {
   margin-top: 10px;
 }
-.email, .name{
+.email,
+.name {
   margin-top: 0.5rem;
 }
-.input-div{
+.input-div {
   position: relative;
   bottom: 1.5rem;
 }
-.input{
+.input {
   font-size: 1.1rem;
   width: 85%;
   line-height: 1.5;
@@ -91,65 +98,70 @@ hr{
   border: 1px solid gray;
   border-radius: 10px;
 }
-.select{
+.select {
   margin-top: 2rem;
 }
-.icons{
-   position: relative;
-   left: 0.4rem;
-   top: 2.1rem;
+.icons {
+  position: relative;
+  left: 0.4rem;
+  top: 2.1rem;
 }
-.add-detail{
+.add-detail {
   position: relative;
   bottom: 1.5rem;
 }
-.phone, .address{
+.phone,
+.address {
   position: relative;
   bottom: 1rem;
 }
-.city{
+.city {
   position: relative;
   bottom: 1.7rem;
 }
-.country{
+.country {
   margin-right: 2rem;
 }
-.country, .post{
+.country,
+.post {
   position: relative;
   bottom: 2.5rem;
   width: 41%;
 }
-.select-input{
+.select-input {
   width: 102%;
 }
-.post-input{
+.post-input {
   width: 90%;
 }
-.select-input, .post-input{
+.select-input,
+.post-input {
   font-size: 1rem;
   line-height: 1.5;
   border: 1px solid gray;
   border-radius: 10px;
   padding: 0.2rem 0 0.2rem 1.7rem;
-  
 }
-.select-icon, .post-icon{
+.select-icon,
+.post-icon {
   position: relative;
-   left: 0.2rem;
-   top: 2.1rem;
+  left: 0.2rem;
+  top: 2.1rem;
 }
-.country-input-div, .post-input-div{
+.country-input-div,
+.post-input-div {
   position: relative;
   bottom: 1.3rem;
 }
-.flex{
+.flex {
   display: flex;
 }
-.checkbox, .check{
+.checkbox,
+.check {
   position: relative;
   bottom: 2.5rem;
 }
-.btn{
+.btn {
   font-size: 1.2rem;
   width: 100px;
   height: 35px;
@@ -161,6 +173,63 @@ hr{
   bottom: 1rem;
   border-radius: 10px;
 }
-.btn:hover{
+.btn:hover {
   background-color: gray;
+}
+
+@media (min-width: 768px) {
+  .page {
+    display: flex;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-left: 10rem;
+  }
+  .main {
+    width: 30%;
+    margin-left: 10rem;
+    font-size: 1.2rem;
+  }
+  img {
+    width: 40%;
+  }
+
+  .product-detail {
+    margin-left: 6rem;
+  }
+  .cost {
+    position: relative;
+    left: 16rem;
+  }
+  .contact {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 0 4rem;
+  }
+  .input {
+    width: 60%;
+    margin: 0 0 0 6rem;
+  }
+  .icons {
+    top: 0.5rem;
+    left: 8rem;
+  }
+  .checkbox {
+    margin-left: 10px;
+  }
+  .check {
+    margin-left: 1rem;
+  }
+  .btn {
+    top: 2rem;
+    left: -4rem;
+    font-size: 1.5rem;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .email,
+  .phone,
+  .add-detail {
+    margin: 1rem 0 1rem 0;
+  }
 }
