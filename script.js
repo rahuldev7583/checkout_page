@@ -20,25 +20,31 @@ total.innerHTML = "$" + (54.99 + 74.99 + 19);
 
 function update(upd, num) {
   if (upd === "minus" && num === 1) {
-    let newQuan = initialQuan--;
+    initialQuan--;
+    let newQuan = initialQuan;
     quantity1.innerHTML = newQuan;
     price1.innerHTML = "$" + (newQuan * 54.99).toFixed(2);
     originalPrice1.innerHTML = "$" + (newQuan * 94.99).toFixed(2);
     total.innerHTML = "$" + (newQuan * 54.99 + newQuan * 94.99).toFixed(2);
+    // console.log("minus 1 clicked");
   } else if (upd == "plus" && num === 1) {
-    let newQuan = initialQuan++;
+    initialQuan++;
+    let newQuan = initialQuan;
     quantity1.innerHTML = newQuan;
     price1.innerHTML = "$" + (newQuan * 54.99).toFixed(2);
     originalPrice1.innerHTML = "$" + (newQuan * 94.99).toFixed(2);
     total.innerHTML = "$" + (newQuan * 54.99 + newQuan * 94.99).toFixed(2);
+    //console.log("plus 1 clicked ");
   } else if (upd === "minus" && num === 2) {
-    let newQuan = initialQuan--;
+    initialQuan--;
+    let newQuan = initialQuan;
     quantity2.innerHTML = newQuan;
     price2.innerHTML = "$" + (newQuan * 74.99).toFixed(2);
     originalPrice2.innerHTML = "$" + (newQuan * 124.99).toFixed(2);
     total.innerHTML = "$" + (newQuan * 74.99 + newQuan * 124.99).toFixed(2);
   } else if (upd == "plus" && num === 2) {
-    let newQuan = initialQuan++;
+    initialQuan++;
+    let newQuan = initialQuan;
     quantity2.innerHTML = newQuan;
     price2.innerHTML = "$" + (newQuan * 74.99).toFixed(2);
     originalPrice2.innerHTML = "$" + (newQuan * 124.99).toFixed(2);
